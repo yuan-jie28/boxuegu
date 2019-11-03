@@ -1,0 +1,96 @@
+<!-- logo图片与搜索 -->
+<view class="img">
+  <view>
+    <image src="https://m.boxuegu.com/_nuxt/img/logo.4ba874d.png" />
+  </view>
+  <view class="iconfont icon-sousuo"></view>
+</view>
+<!-- 轮播图 -->
+<view class="lunbo">
+  <image src="https://attachment-center.boxuegu.com/data/picture/online/2019/10/24/19/727b801043714688aadc6e99bc393280.jpg"/>
+</view>
+<!-- 分类 -->
+<view class="lessons">
+  <block wx:for="{{ class }}" wx:key="class">
+    <view>
+      <image class="icon" src="{{ item.img }}"/>
+      <text>{{ item.text }}</text>
+    </view>
+  </block>
+</view>
+<!-- 就业列表 -->
+<view class="list">
+  <view class="list-nav">
+    <view>就业课</view>
+    <view>更多</view>
+  </view>
+  <block wx:for="{{ list }}" wx:key='lists'>
+      <view class="list-item">
+    <view class="list-item-left">
+      <image src="{{ item.img }}"/>
+    </view>
+    <view class="list-item-right">
+      <view class="list-item-right-font">{{ item.text1 }}</view>
+      <view class="list-item-right-color">{{ item.text2 }}</view>
+      <view class="list-item-button">
+        <view>{{ item.text3 }}</view>
+        <view class="list-item-button-color">{{ item.money }}</view>
+      </view>
+    </view>
+  </view>
+  </block>
+</view>
+<!-- 推荐课程 -->
+<view class="recommend">
+  <view class="recommend-nav">
+    <view>推荐课程</view>
+    <view>更多</view>
+  </view>
+  <block wx:for="{{ recommend }}" wx:key='commends'>
+    <view class="recommend-top">
+      <view>
+        <image src="{{ item.img1 }}" />
+        <view class="recommend-font">{{ item.test1 }}</view>
+        <view class="recommend-button">
+          <view class="recommend-button-left">{{ item.test2 }}</view>
+          <view class="recommend-button-right">{{ item.money1 }}</view>
+        </view>
+      </view>
+      <view>
+        <image src="{{ item.img2 }}" />
+        <view class="recommend-font">{{ item.test3 }}</view>
+        <view class="recommend-button">
+          <view class="recommend-button-left">{{ item.test4 }}</view>
+          <view class="recommend-button-right">{{ item.money2 }}</view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+<!-- 免费课 -->
+<view class="free">
+  <view class="free-nav">
+    <view>免费课</view>
+    <view>更多</view>
+  </view>
+  <block wx:for="{{ free }}" wx:key='frees'>
+    <view class="free-top">
+      <view>
+        <image src="{{ item.img1 }}" />
+        <view class="free-font">{{ item.test1 }}</view>
+        <view class="free-button">
+          <view class="free-button-left">{{ item.test2 }}</view>
+          <view class="free-button-right">{{ item.money }}</view>
+        </view>
+      </view>
+      <view>
+        <image src="{{ item.img2 }}" />
+        <view class="free-font">{{ item.test3 }}</view>
+        <view class="free-button">
+          <view class="free-button-left">{{ item.test4 }}</view>
+          <view class="free-button-right">{{ item.money }}</view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

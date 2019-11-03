@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/classify/classify",
+    "pages/study/study",
+    "pages/personage/personage"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "博学谷",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9a9a9",
+    "selectedColor": "#38adff",
+    "backgroundColor": "#ffffff",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/public/img/index.png",
+        "selectedIconPath": "/public/img/index_active.png"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "分类",
+        "iconPath": "/public/img/classify.png",
+        "selectedIconPath": "/public/img/classify_active.png"
+      },
+      {
+        "pagePath": "pages/study/study",
+        "text": "学习",
+        "iconPath": "/public/img/study.png",
+        "selectedIconPath": "/public/img/study_active.png"
+      },
+      {
+        "pagePath": "pages/personage/personage",
+        "text": "个人",
+        "iconPath": "/public/img/personage.png",
+        "selectedIconPath": "/public/img/personage_active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
